@@ -20,15 +20,15 @@ public class HlCraftingBlocks {
             craftTime = 60f;
             outputItem = new ItemStack(Items.silicon, 1);
             hasPower = true;
-            size = 2;
+            size = 3;
             health = 60;
             hasLiquids = true;
             hasItems = true;
-            consumePower(0.6f);
-            consumeItems(with(new ItemStack(Items.sand, 4), new ItemStack(Items.graphite, 1)));
+            consumePower(6f);
+            consumeItems(with(Items.graphite, 1, Items.sand, 4));
             drawer = new DrawMulti(new DrawRegion("-bottom"), new DrawArcSmelt(), new DrawDefault());
             ambientSound = Sounds.smelter;
-            ambientSoundVolume = 0.03f;
+            ambientSoundVolume = 0.12f;
         }};
     }
 }
