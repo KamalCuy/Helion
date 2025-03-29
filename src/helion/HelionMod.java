@@ -9,6 +9,6 @@ public class HelionMod extends Mod{
 
     public void loadContent(){
         EntityRegistry.register();
-        HlBlocks.load();
+        HelionBlocks.load();
     }
 }
